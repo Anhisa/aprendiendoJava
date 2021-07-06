@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     box-sizing: border-box;
 }
@@ -14,3 +15,21 @@ body {
     padding: 10px;
     margin: 5px;
 }
+=======
+body {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(4,minmax(min-content,max-content));
+    grid-auto-rows: 50px;
+}
+
+.grid-container .grid-item {
+    border: 1px solid #48e;
+    padding: 10px;
+    margin: 5px;
+}
+>>>>>>> 38316d9 (primer commit del curso de java soy dalto)

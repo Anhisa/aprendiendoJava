@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     color: #333;
     font-family: sans-serif;
@@ -63,4 +64,71 @@ form {
 .red {
     color: rgb(150, 0, 0);
     margin: auto 28px;
+=======
+body {
+    color: #333;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+input {
+    display: block;
+    width: 90%;
+    padding: 6px;
+    margin: 10px auto;
+    border: none;
+    background: #333;
+    border-radius: 2px;
+    transition: color 0.6s, background 0.6s;
+    box-shadow: 1px -1px 3px rgb(70, 70, 70);
+    color: aqua;
+}
+
+input::placeholder {
+    color:rgba(0, 255, 255, 0.384);
+    transition: color 0.6s, background 0.6s;
+}
+
+input:hover {
+    background: rgb(100, 100, 100);
+}
+
+input:hover::placeholder {
+    color: aqua;
+    border: none;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+input[type="submit"]{
+    width: 30%; 
+    margin: 20px 4%;
+    padding: 8px;
+    color:aqua;
+}
+
+form {
+    width: 90%;
+    margin: auto;
+    background: rgb(138, 138, 138);
+    padding: 30px;
+}
+
+#title {
+    margin: auto 28px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.green {
+    color: white;
+    margin: auto 28px;
+}
+
+.red {
+    color: rgb(150, 0, 0);
+    margin: auto 28px;
+>>>>>>> 38316d9 (primer commit del curso de java soy dalto)
 }
