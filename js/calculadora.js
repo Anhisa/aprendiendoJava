@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 class Calculadora {
     constructor() {     
     }
@@ -72,7 +72,7 @@ if (operacion == 7) {
 }
 else {
     alert("No se ha encontrado la operación.")
-=======
+// =======
 class Calculadora {
     constructor() {     
     }
@@ -146,5 +146,6 @@ if (operacion == 7) {
 }
 else {
     alert("No se ha encontrado la operación.")
->>>>>>> 38316d9 (primer commit del curso de java soy dalto)
 }
+}
+// >>>>>>> 38316d9 (primer commit del curso de java soy dalto)
