@@ -1,94 +1,12 @@
-// <<<<<<< HEAD
-const materiasHTML = document.querySelector(".materias")
-
-const materias = [
-    {
-        nombre: "Fisica 1",
-        nota: 5
-    },{
-        nombre: "Matemáticas Esp.",
-        nota: 4.5
-    },{
-        nombre: "química",
-        nota: 2.7
-    },{
-        nombre: "Calculo 3",
-        nota: 4.8
-    },{
-        nombre: "Electiva 1",
-        nota: 4.9
-    }
-]
-const obtenerMateria = (id)=>{
-    return new Promise((res,rej)=>{
-        materia = materias[id];
-        if (materia == undefined) rej("La materia no existe");
-        else setTimeout(()=>{res(materia)},Math.random()*2400)
-    })
-}
-
-const devolverMaterias = async ()=>{
-    let materia = [];
-    for (let i = 0; i < materias.length; i++) {
-        materia[i] = await obtenerMateria(i);
-        console.log(materia[i])
-        let newHTMLCode = `<div class="materia">
-        <div class="nombre">${materia[i].nombre}</div>
-        <div class="nota">${materia[i].nota}</div>
-    </div>`;
-    materiasHTML.innerHTML += newHTMLCode;
+const getInfo = async ()=>{
+    function capitalize(word) {
+        return word[0].toUpperCase() + word.slice(1);
         }
+    resultado = await axios("JSON/informacion.txt");
+    document.querySelector(".info-nombre").innerHTML = capitalize(resultado.data.nombre);
+    document.querySelector(".info-pais").innerHTML = capitalize(resultado.data.pais);
+    document.querySelector(".info-embajada").innerHTML = capitalize(resultado.data.embajada);
+    document.querySelector(".info-funciones").innerHTML = capitalize(resultado.data.funciones);
 }
 
-devolverMaterias()
-
-const request = new XMLHttpRequest();
-
-const materiasHTML = document.querySelector(".materias")
-
-const materias = [
-    {
-        nombre: "Fisica 1",
-        nota: 5
-    },{
-        nombre: "Matemáticas Esp.",
-        nota: 4.5
-    },{
-        nombre: "química",
-        nota: 2.7
-    },{
-        nombre: "Calculo 3",
-        nota: 4.8
-    },{
-        nombre: "Electiva 1",
-        nota: 4.9
-    }
-]
-
-const obtenerMateria = (id)=>{
-    return new Promise((res,rej)=>{
-        materia = materias[id];
-        if (materia == undefined) rej("La materia no existe");
-        else setTimeout(()=>{res(materia)},Math.random()*2400)
-    })
-}
-
-const devolverMaterias = async ()=>{
-    let materia = [];
-    for (let i = 0; i < materias.length; i++) {
-        materia[i] = await obtenerMateria(i);
-        console.log(materia[i])
-        let newHTMLCode = `<div class="materia">
-        <div class="nombre">${materia[i].nombre}</div>
-        <div class="nota">${materia[i].nota}</div>
-    </div>`;
-    materiasHTML.innerHTML += newHTMLCode;
-        }
-}
-
-devolverMaterias()
-
-const request = new XMLHttpRequest();
-
-// >>>>>>> 38316d9 (primer commit del curso de java soy dalto)
-console.log(request)
+document.getElementById("getInfo").addEventListener("click",getInfo);

@@ -1,0 +1,5 @@
+{"nombre" : "fulano de tal",
+"pais" : "china",
+"embajada" : "colombia",
+"funciones" : "hacerse cargo de las relaciones diplomáticas entre china y Polombia"
+ }
