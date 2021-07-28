@@ -1,5 +1,5 @@
-{"nombre" : "fulano de tal",
-"pais" : "china",
+{"nombre" : "ful
 "embajada" : "colombia",
-"funciones" : "hacerse cargo de las relaciones diplomáticas entre china y Polombia"
+"funciones" : "hacerse cano de tal",
+"pais" : "china",argo de las relaciones diplomáticas entre china y Polombia"
  }
